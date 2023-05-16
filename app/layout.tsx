@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import Footer from "@components/Footer";
-import Navbar from "@components/Navbar";
+import Footer from "@components/Footer/Footer";
+import Navbar from "@components/Navbar/Navbar";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html data-theme="business" lang="en">
+		<html data-theme="night" lang="en">
 			<body className={inter.className}>
 				<main className="app">
 					<Navbar></Navbar>
