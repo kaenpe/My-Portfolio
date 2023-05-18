@@ -4,6 +4,15 @@ import { DiDebian } from "react-icons/di";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
+	const navElementsList = (num: number, className: string, [...args]) => {
+		return Array(num)
+			.fill(null)
+			.map((el, id) => (
+				<li key={id}>
+					<a className={className}>{args[id]}</a>
+				</li>
+			));
+	};
 	return (
 		<nav className="navbar fixed bg-base-300 w-screen h-16">
 			<div className="flex-1">
@@ -33,17 +42,11 @@ const Navbar = () => {
 			</ul>
 			<div className="flex-none hidden md:flex">
 				<ul className="menu menu-horizontal px-1">
-					<li>
-						<a className="text-xl transition-all hover:text-2xl">Projects</a>
-					</li>
-					<li>
-						<a className="text-xl transition-all hover:text-2xl">
-							Technologies
-						</a>
-					</li>
-					<li>
-						<a className="text-xl transition-all hover:text-2xl">About</a>
-					</li>
+					{navElementsList(3, "text-lg transition-all hover:text-xl", [
+						"HOME",
+						"PROJECTS",
+						"ABOUT",
+					])}
 				</ul>
 			</div>
 			<div className="dropdown dropdown-bottom dropdown-end md:hidden">
@@ -54,15 +57,7 @@ const Navbar = () => {
 					tabIndex={0}
 					className="dropdown-content menu p-2 mt-5 shadow bg-base-300 rounded-box w-52"
 				>
-					<li>
-						<a className="text-xl">Projects</a>
-					</li>
-					<li>
-						<a className="text-xl">Technologies</a>
-					</li>
-					<li>
-						<a className="text-xl">About</a>
-					</li>
+					{navElementsList(3, "text-lg", ["HOME", "PROJECTS", "ABOUT"])}
 				</ul>
 			</div>
 		</nav>
