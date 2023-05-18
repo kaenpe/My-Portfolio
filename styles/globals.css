@@ -25,11 +25,3 @@ body {
 		)
 		rgb(var(--background-start-rgb));
 }
-
-.app {
-	@apply min-h-screen relative z-10 flex justify-between items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
-}
-
-.nav-link {
-	@apply text-2xl transition-all hover:text-3xl;
-}

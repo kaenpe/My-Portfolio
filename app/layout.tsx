@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 import Footer from "@components/Footer/Footer";
 import Navbar from "@components/Navbar/Navbar";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "My Portfolio",
@@ -17,8 +17,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html data-theme="night" lang="en">
-			<body className={inter.className}>
-				<main className="app">
+			<body className={font.className}>
+				<main className="min-h-screen relative z-10 flex justify-between items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
 					<Navbar></Navbar>
 					{children}
 					<Footer></Footer>
