@@ -1,41 +1,39 @@
 import React from "react";
-import AnimatedText from "../Hero/AnimatedText";
-import devImage from "../../public/assets/pngwing.com.png";
-import Image from "next/image";
-import Link from "next/link";
+import AnimatedAbout from "./AnimatedAbout";
+import Experience from "./Experience";
 const About = () => {
 	return (
-		<div className="hero h-screen w-screen bg-base-200">
-			<div className="hero-content text-center md:flex-row flex-col">
-				<div className="w-3/4 md:w-1/2">
-					<Image
-						src={devImage}
-						alt="hero image"
-						className="w-full h-full"
-					></Image>
-				</div>
-
-				<div className="prose text-center md:text-left ">
-					<AnimatedText
+		<div className="hero min-h-screen w-screen bg-base-200 items-start py-32 px-10">
+			<div className="hero-content items-start text-center justify-start flex-col space-y-10">
+				<div className="prose text-center">
+					<AnimatedAbout
 						text={"Welcome to my personal portfolio"}
-						className="text-xl md:text-6xl"
-						type="h1"
-					></AnimatedText>
-					<AnimatedText
-						text={`	My name is Kamil and I am an aspiring full-stack web developer. I
-						specialize in React and Next.js web applications. I aim to provide
-						high level of client satisfaction. Here you can browse my projects
-						showcasing my web development expertise.`}
-						className="text-xs sm:text-lg"
-						type="p"
-					></AnimatedText>
-					<Link href="/projects">
-						<button className="btn mr-2 rounded-md">My Projects</button>
-					</Link>
-					<Link href="/about">
-						<button className="btn btn-outline rounded-md">About me</button>
-					</Link>
+						className="text-4xl md:text-6xl"
+						type="h4"
+					></AnimatedAbout>
 				</div>
+				<div className="flex justify-between w-full prose">
+					<div className="flex flex-col flex-start text-left space-y-3">
+						<h1 className="text-center">BIOGRAPHY</h1>
+						<p className="">
+							I am a full-stack web developer with a passion for creating web
+							applications. I always strive to find new, exciting and innovative
+							ways to bring my client&apos;s vision to life.
+						</p>
+						<p>
+							I believe that development is about more than just making things
+							work, – it&apos;s about solving problems and creating intuitive,
+							enjoyable experiences for users.
+						</p>
+						<p>
+							Whether I&apos;m working on a website, mobile app, or other
+							digital product, I commit myself fully to being as client-centered
+							as possible. I look forward to the opportunity to bring my skills
+							and passion to your next project.
+						</p>
+					</div>
+				</div>
+				<Experience></Experience>
 			</div>
 		</div>
 	);

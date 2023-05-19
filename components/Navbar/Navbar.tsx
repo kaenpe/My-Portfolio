@@ -16,20 +16,20 @@ const Navbar = () => {
 			));
 	};
 	return (
-		<nav className="navbar fixed bg-base-300 w-screen h-16">
+		<nav className="z-10 navbar fixed bg-base-300 w-screen h-16">
 			<div className="flex-1">
 				<a className="btn btn-ghost normal-case text-xl prose">
 					<DiDebian /> <span className="ml-2">My portfolio</span>
 				</a>
 			</div>
-			<ul className="child:m-1 prose">
+			<ul className="space-x-3">
 				<li>
 					<Link
 						href="https://github.com/kaenpe/"
 						target="_blank"
 						className="text-2xl transition-all"
 					>
-						<FaGithub></FaGithub>
+						<FaGithub color="black"></FaGithub>
 					</Link>
 				</li>
 				<li>
@@ -38,17 +38,17 @@ const Navbar = () => {
 						target="_blank"
 						className="text-2xl transition-all"
 					>
-						<FaLinkedin></FaLinkedin>
+						<FaLinkedin color="black"></FaLinkedin>
 					</Link>
 				</li>
 			</ul>
 			<div className="flex-none hidden md:flex">
 				<ul className="menu menu-horizontal px-1">
-					{navElementsList(3, "text-lg transition-all hover:text-xl prose", [
-						"HOME",
-						"PROJECTS",
-						"ABOUT",
-					])}
+					{navElementsList(
+						3,
+						"text-lg transition-all hover:text-xl prose dark:prose-invert",
+						["HOME", "PROJECTS", "ABOUT"]
+					)}
 				</ul>
 			</div>
 			<div className="dropdown dropdown-bottom dropdown-end md:hidden">

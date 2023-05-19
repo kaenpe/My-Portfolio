@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-const AnimatedText = ({
+const AnimatedHero = ({
 	text,
 	className,
 	type,
@@ -15,16 +15,16 @@ const AnimatedText = ({
 		animate: {
 			opacity: 1,
 			transition: {
-				staggerChildren: type === "h1" ? 0.15 : 0.01,
+				staggerChildren: type === "h4" ? 0.15 : 0.01,
 			},
 		},
 	};
 
 	const words = {
-		initial: { x: type === "h1" ? -50 : 50, opacity: 0 },
+		initial: { y: type === "h4" ? 50 : -50, opacity: 0 },
 		animate: {
 			opacity: 1,
-			x: 0,
+			y: 0,
 			transition: {
 				duration: 1,
 			},
@@ -32,7 +32,7 @@ const AnimatedText = ({
 	};
 
 	const renderItems = () => {
-		if (type === "h1") {
+		if (type === "h4") {
 			return (
 				<motion.h4
 					variants={header}
@@ -68,4 +68,4 @@ const AnimatedText = ({
 	return <>{renderItems()}</>;
 };
 
-export default AnimatedText;
+export default AnimatedHero;

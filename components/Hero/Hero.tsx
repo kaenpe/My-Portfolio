@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedText from "./AnimatedText";
+import AnimatedHero from "./AnimatedHero";
 import devImage from "../../public/assets/pngwing.com.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,26 +15,28 @@ const Hero = () => {
 					></Image>
 				</div>
 
-				<div className="prose text-center md:text-left ">
-					<AnimatedText
+				<div className="prose text-center md:text-left">
+					<AnimatedHero
 						text={"Welcome to my personal portfolio"}
 						className="text-xl md:text-6xl"
 						type="h1"
-					></AnimatedText>
-					<AnimatedText
+					></AnimatedHero>
+					<AnimatedHero
 						text={`	My name is Kamil and I am an aspiring full-stack web developer. I
 						specialize in React and Next.js web applications. I aim to provide
 						high level of client satisfaction. Here you can browse my projects
 						showcasing my web development expertise.`}
 						className="text-xs sm:text-lg"
 						type="p"
-					></AnimatedText>
-					<Link href="/projects">
-						<button className="btn mr-2 rounded-md">My Projects</button>
-					</Link>
-					<Link href="/about">
-						<button className="btn btn-outline rounded-md">About me</button>
-					</Link>
+					></AnimatedHero>
+					<div className="space-x-3">
+						<Link href="/projects">
+							<button className="btn rounded-md">My Projects</button>
+						</Link>
+						<Link href="/about">
+							<button className="btn btn-outline rounded-md">About me</button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
