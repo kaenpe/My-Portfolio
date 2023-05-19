@@ -16,7 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html data-theme="night" lang="en">
+		<html data-theme="lofi" lang="en">
 			<body className={font.className}>
 				<main className="min-h-screen relative z-10 flex justify-between items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
 					<Navbar></Navbar>

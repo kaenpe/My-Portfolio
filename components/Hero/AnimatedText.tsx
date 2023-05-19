@@ -34,7 +34,7 @@ const AnimatedText = ({
 	const renderItems = () => {
 		if (type === "h1") {
 			return (
-				<motion.h1
+				<motion.h4
 					variants={header}
 					initial="initial"
 					animate="animate"
@@ -45,7 +45,7 @@ const AnimatedText = ({
 							{el}&nbsp;
 						</motion.span>
 					))}
-				</motion.h1>
+				</motion.h4>
 			);
 		} else if (type === "p") {
 			return (

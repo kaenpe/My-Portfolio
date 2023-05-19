@@ -9,18 +9,20 @@ const Navbar = () => {
 			.fill(null)
 			.map((el, id) => (
 				<li key={id}>
-					<a className={className}>{args[id]}</a>
+					<Link href={`${args[id].toLowerCase()}`} className={className}>
+						{args[id]}
+					</Link>
 				</li>
 			));
 	};
 	return (
 		<nav className="navbar fixed bg-base-300 w-screen h-16">
 			<div className="flex-1">
-				<a className="btn btn-ghost normal-case text-xl">
+				<a className="btn btn-ghost normal-case text-xl prose">
 					<DiDebian /> <span className="ml-2">My portfolio</span>
 				</a>
 			</div>
-			<ul className="child:m-1">
+			<ul className="child:m-1 prose">
 				<li>
 					<Link
 						href="https://github.com/kaenpe/"
@@ -42,7 +44,7 @@ const Navbar = () => {
 			</ul>
 			<div className="flex-none hidden md:flex">
 				<ul className="menu menu-horizontal px-1">
-					{navElementsList(3, "text-lg transition-all hover:text-xl", [
+					{navElementsList(3, "text-lg transition-all hover:text-xl prose", [
 						"HOME",
 						"PROJECTS",
 						"ABOUT",
@@ -57,7 +59,7 @@ const Navbar = () => {
 					tabIndex={0}
 					className="dropdown-content menu p-2 mt-5 shadow bg-base-300 rounded-box w-52"
 				>
-					{navElementsList(3, "text-lg", ["HOME", "PROJECTS", "ABOUT"])}
+					{navElementsList(3, "text-lg prose", ["HOME", "PROJECTS", "ABOUT"])}
 				</ul>
 			</div>
 		</nav>

@@ -1,9 +1,9 @@
 import React from "react";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../Hero/AnimatedText";
 import devImage from "../../public/assets/pngwing.com.png";
 import Image from "next/image";
 import Link from "next/link";
-const Hero = () => {
+const About = () => {
 	return (
 		<div className="hero h-screen w-screen bg-base-200">
 			<div className="hero-content text-center md:flex-row flex-col">
@@ -41,4 +41,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default About;
