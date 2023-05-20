@@ -22,14 +22,14 @@ const Navbar = () => {
 					<DiDebian /> <span className="ml-2">My portfolio</span>
 				</a>
 			</div>
-			<ul className="space-x-3">
+			<ul className="space-x-3 mr-2">
 				<li>
 					<Link
 						href="https://github.com/kaenpe/"
 						target="_blank"
 						className="text-2xl transition-all"
 					>
-						<FaGithub color="black"></FaGithub>
+						<FaGithub className="fill-base-content"></FaGithub>
 					</Link>
 				</li>
 				<li>
@@ -38,12 +38,12 @@ const Navbar = () => {
 						target="_blank"
 						className="text-2xl transition-all"
 					>
-						<FaLinkedin color="black"></FaLinkedin>
+						<FaLinkedin className="fill-base-content"></FaLinkedin>
 					</Link>
 				</li>
 			</ul>
 			<div className="flex-none hidden md:flex">
-				<ul className="menu menu-horizontal px-1">
+				<ul className="menu menu-horizontal px-1 space-x-2">
 					{navElementsList(
 						3,
 						"text-lg transition-all hover:text-xl prose dark:prose-invert",
