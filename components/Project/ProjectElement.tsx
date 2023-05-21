@@ -12,13 +12,11 @@ interface IProps {
 const ProjectElement = ({ title, text, link, img }: IProps) => {
 	return (
 		<div className="prose border-solid w-full h-full border-base-content border rounded-xl flex items-center justify-center">
-			<Link className="w-1/2">
-				<Image
-					src="/assets/projects/proompta.png"
-					alt="web-thumbnail"
-					className="w-full h-auto"
-				></Image>
-			</Link>
+			<Image
+				src="/assets/projects/proompta.png"
+				alt="web-thumbnail"
+				className="w-full h-auto"
+			></Image>
 
 			<div className="flex flex-col justify-center items-center">
 				<h4>{title}</h4>
