@@ -23,7 +23,6 @@ const About = () => {
 				<Experience></Experience>
 				<AnimatedDivider />
 				<Technologies></Technologies>
-				<AnimatedDivider />
 			</div>
 		</div>
 	);

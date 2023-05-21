@@ -7,18 +7,19 @@ const Details = ({ position, company, time, address, work }: IDetails) => {
 	const ref2 = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: ref,
-		offset: ["start start", "end end"],
+		offset: ["center end", "center center"],
 	});
 
 	const { scrollYProgress: scrollYProgCircle } = useScroll({
 		target: ref2,
-		offset: ["start start", "end end"],
+		offset: ["center end", "center center"],
 	});
 
 	return (
 		<li className="flex items-center">
 			<motion.div
 				style={{ scaleY: scrollYProgress }}
+				ref={ref}
 				className="absolute top-0 left-0 m-0 h-full w-[4px] bg-black origin-top"
 			></motion.div>
 
@@ -29,7 +30,7 @@ const Details = ({ position, company, time, address, work }: IDetails) => {
 				</h3>
 				<span>
 					{time} | {address}{" "}
-					<AnimatedIcon ref={ref2} path={scrollYProgCircle}></AnimatedIcon>
+					<AnimatedIcon ref={ref} path={scrollYProgress}></AnimatedIcon>
 				</span>
 				<p className="font-medium w-full">{work}</p>
 			</div>
