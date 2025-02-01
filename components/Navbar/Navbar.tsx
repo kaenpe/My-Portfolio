@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import NavMenuItem from "./NavMenuItem";
 const Navbar = () => {
-	const pages = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
+	const pages = ["HOME", "ABOUT", "PROJECTS"];
 	return (
 		<nav className="z-10 navbar fixed bg-base-300 w-screen h-16">
 			<div className="flex-1">
