@@ -6,9 +6,9 @@ const Biography = () => {
 			<div className="flex flex-col flex-start text-left space-y-3">
 				<h1 className="text-center">BIOGRAPHY</h1>
 				<p className="">
-					I am a full-stack web bang bang developer with a passion for crafting
-					dynamic, user-focused web applications. With an eye for detail and a
-					drive for innovation, I thrive on turning ideas into seamless digital
+					I am a full-stack web developer with a passion for crafting dynamic,
+					user-focused web applications. With an eye for detail and a drive for
+					innovation, I thrive on turning ideas into seamless digital
 					experiences that not only function flawlessly but also captivate
 					users.
 				</p>
