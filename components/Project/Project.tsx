@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Project = () => {
 	return (
-		<div className="hero min-h-screen bg-base-200 w-screen py-32 px-10">
-			<div className="hero-content grid grid-cols-[repeat(auto-fit,minmax(380px,1fr))] place-items-center min-h-screen w-full">
+		<div className="hero min-h-screen bg-base-200 w-screen py-20 px-2">
+			<div className="hero-content grid place-items-center min-h-screen w-full">
 				<ProjectElement
 					text={
 						"A website used to create and manage meaningful prompts for AI models"
