@@ -19,14 +19,14 @@ const Project = () => {
 					text={"My first project using NextJS"}
 					img="burger-builder"
 					title={"Burger Maker"}
-					link={"https://www.burgerbuilder-nine.vercel.app"}
+					link={"https://burger-builder-nine.vercel.app"}
 					element={2}
 				/>
 				<ProjectElement
 					text={"First commercial website developed"}
 					img="plumtree"
 					title={"Plumtree Agency"}
-					link="https://www.plumtreeagency.pl"
+					link="https://plumtreeagency.pl"
 					element={3}
 				/>
 			</div>
