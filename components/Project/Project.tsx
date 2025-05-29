@@ -12,7 +12,7 @@ const Project = () => {
 					}
 					img="proompta"
 					title={"Proompta"}
-					link="https://www.proompta.vercel.app"
+					link="https://proompta.vercel.app"
 					element={1}
 				/>
 				<ProjectElement
